@@ -1,0 +1,64 @@
+/* Styles to replace Tailwind used in visual.jsx */
+.container {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* equivalente a gap-8 */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.title {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 3.75rem; /* text-6xl */
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  mix-blend-mode: exclusion;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4.5rem; /* md:text-7xl */
+  }
+}
+
+.subtitle {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.125rem; /* text-lg */
+  max-width: 42rem; /* max-w-2xl */
+  line-height: 1.75; /* leading-relaxed */
+  mix-blend-mode: exclusion;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 1.25rem; /* md:text-xl */
+  }
+}

@@ -1,12 +1,29 @@
 :root {
-  --background: #ffffff;
+  /* Paleta do cliente */
+  --color-purple: #7a5af8; /* Púrpura Criativo */
+  --color-grafite: #1c1c1c; /* Grafite Profundo */
+  --color-cyan: #00ffc7; /* Ciano Energético */
+  --color-offwhite: #f7f7f7; /* Off-White Elegante */
+  --color-gray: #a8a8a8; /* Cinza Neutro */
+
+  /* Tokens semânticos (modo claro) */
+  --background: rgb(255, 255, 255);
   --foreground: #171717;
+  --muted: var(--color-gray);
+  --primary: var(--color-purple);
+  --accent: var(--color-cyan);
+  --surface: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Tokens semânticos (modo escuro) */
+    --background: rgb(255, 255, 255);
+    --foreground: rgb(0, 0, 0);
+    --muted: #bdbdbd;
+    --primary: var(--color-purple);
+    --accent: var(--color-cyan);
+    --surface: #121212;
   }
 }
 

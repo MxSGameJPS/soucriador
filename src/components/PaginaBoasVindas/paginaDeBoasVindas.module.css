@@ -1,0 +1,15 @@
+.paginaDeBoasVindas {
+    text-align: center;
+    margin-bottom: 40px;
+    background: transparent;
+}
+
+.paginaDeBoasVindas h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.paginaDeBoasVindas p {
+    font-size: 18px;
+    color: var(--text-secondary);
+}
