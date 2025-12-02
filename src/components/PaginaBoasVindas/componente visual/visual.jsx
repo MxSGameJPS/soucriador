@@ -1,7 +1,7 @@
 import Loader from "./tituloESubtitulo/tituloESubtitulo";
 import DotScreenShader from "../DotScreenShader";
 import style from "./visual.module.css";
-
+import BotaoGoogle from "../../botãogoogle/botãogoogle";
 export default function DemoOne() {
   return (
     <div className={style.container}>
@@ -14,6 +14,7 @@ export default function DemoOne() {
           Site criado para ajudar você criador de conteúdo a transformar suas
           ideias em realidade e ter sucesso.
         </p>
+      <BotaoGoogle />
       </div>
     </div>
   );
