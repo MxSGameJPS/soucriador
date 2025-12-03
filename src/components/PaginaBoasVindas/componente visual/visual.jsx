@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Loader from "./tituloESubtitulo/tituloESubtitulo";
 import DotScreenShader from "../DotScreenShader";
 import style from "./visual.module.css";
@@ -8,6 +9,7 @@ import Login from "../../modalLogin/login";
 import { supabase } from "../../../lib/supabaseClient";
 
 export default function DemoOne() {
+  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [userData, setUserData] = useState(null);
@@ -37,6 +39,8 @@ export default function DemoOne() {
             full_name: user.user_metadata.full_name,
           });
           setShowModal(true);
+        } else {
+          router.push("/PaginaInicial");
         }
       }
     };
@@ -55,7 +59,7 @@ export default function DemoOne() {
     return () => {
       authListener.subscription.unsubscribe();
     };
-  }, []);
+  }, [router]);
 
   const handleRegistroSuccess = () => {
     console.log("handleRegistroSuccess called! Switching to Login modal.");

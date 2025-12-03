@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+    background: linear-gradient(45deg, #7A5AF8, #F7F7F7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 4rem;
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 4rem;
+
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+        color: #7A5AF8;
+    }
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 4rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menuItem {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #1C1C1C;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+        color: #7A5AF8;
+    }
+}
+
+
+
+
